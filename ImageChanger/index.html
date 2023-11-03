@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 250px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <img  id="myImage"  src="./image/Diwali.png">
+    <button onclick="change('./image/karnataka.png')">one</button>
+    <button onclick="change('./image/Diwali.png')">two</button>
+
+
+    <script>
+        function change(filename){
+        
+            var x = document.querySelector("#myImage");
+            x.setAttribute("src",filename)
+        }
+
+    </script>
+</body>
+</html>
